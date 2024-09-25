@@ -1,0 +1,162 @@
+:root {
+  --color--focus-state: blue;
+  --color--font-primary: #1a1f27;
+  --color--font-secondary: #1a1f2780; /* 50% transparency */
+  --font-weight--normal: 400;
+  --font-weight--bold: 700;
+  --font-size--normal: 1rem;
+  --font-size--small: calc(12 / 16 * var(--font-size--normal));
+  --font-size--large: calc(20 / 16 * var(--font-size--normal));
+  --vertical-rythm: 2rem;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight--normal);
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.5;
+  color: var(--color--font-primary);
+  padding: 2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+}
+
+a:hover {
+  color: var(--color--focus-state);
+}
+
+a:focus {
+  outline: 2px dashed var(--color--focus-state);
+  outline-offset: 4px;
+}
+
+body > * + *,
+section + section {
+  margin-block-start: var(--vertical-rythm);
+}
+
+h2 ~ ul {
+  padding: 1rem;
+}
+
+li + li {
+  margin-block-start: calc(var(--vertical-rythm) / 4);
+}
+
+.text--secondary {
+  color: var(--color--font-secondary);
+  font-size: var(--font-size--small);
+}
+
+.icon {
+  width: 1cap;
+  height: 1cap;
+}
+
+.with-icon {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.with-icon .icon {
+  margin-inline-end: 0.5rem;
+}
+
+.font-size\:large {
+  font-size: var(--font-size--large);
+}
+
+.skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  > * {
+    margin: 0;
+  }
+}
+
+.skill {
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 0.25rem 0.5rem;
+}
+
+.skill--html {
+  color: white;
+  background-color: #f06529;
+}
+
+.skill-css {
+  color: white;
+  background-color: #264de4;
+}
+
+.skill--javascript {
+  background-color: #f7df1e;
+}
+
+.skill--typescript {
+  color: white;
+  background-color: #3178c6;
+}
+
+.skill--angular {
+  color: white;
+  background-color: #fa2c04;
+}
+
+.skill--generic {
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+.skill--react {
+  background-color: #58c4dc;
+}
+
+.skill--nodejs {
+  background-color: #339933;
+  color: white;
+}
+
+.skill--perl {
+  color: white;
+  background-color: #4e5d85;
+}
