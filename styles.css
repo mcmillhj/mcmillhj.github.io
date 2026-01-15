@@ -7,7 +7,7 @@
   --font-size--normal: 1rem;
   --font-size--small: calc(12 / 16 * var(--font-size--normal));
   --font-size--large: calc(20 / 16 * var(--font-size--normal));
-  --vertical-rythm: 2rem;
+  --vertical-rythm: 1rem;
 }
 
 html,
@@ -69,10 +69,6 @@ a:focus {
 body > * + *,
 section + section {
   margin-block-start: var(--vertical-rythm);
-}
-
-h2 ~ ul {
-  padding: 1rem;
 }
 
 li + li {
